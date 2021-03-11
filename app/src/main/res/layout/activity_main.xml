@@ -40,6 +40,8 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/curved_background"
         android:hint="Email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
         android:textColorHint="@color/silverGray"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +57,8 @@
         android:textColorHint="@color/silverGray"
         android:background="@drawable/curved_background"
         android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
@@ -104,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account? Register"
