@@ -108,36 +108,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_google"
         android:padding="12dp"
         android:text="Google"
-        app:strokeColor="@color/silverGray"
-        app:strokeWidth="1dp"
-        android:drawableLeft="@drawable/ic_google"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
         app:cornerRadius="8dp"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:strokeColor="@color/silverGray"
+        app:strokeWidth="1dp" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Facebook"
+        android:drawableLeft="@drawable/ic_facebook"
         android:padding="12dp"
+        android:text="Facebook"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
         app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
         app:strokeColor="@color/silverGray"
-        app:strokeWidth="1dp"
-        android:drawableLeft="@drawable/ic_facebook"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:strokeWidth="1dp" />
 
     <TextView
         android:id="@+id/signin"
@@ -150,4 +150,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4"
         app:layout_constraintVertical_bias="0.78" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign up"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        app:backgroundTint="@color/main"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 </androidx.constraintlayout.widget.ConstraintLayout>
